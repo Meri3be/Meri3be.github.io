@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>SMOJE CONSULTING d.o.o. | Tehničko savjetovanje i IT podrška</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Courier New", monospace;
+            background-color: #f4f1ec;
+            color: #1f1f1f;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        /* Retro striped pattern */
+        .striped {
+            background: repeating-linear-gradient(
+                45deg,
+                #f4f1ec,
+                #f4f1ec 10px,
+                #e6e1d8 10px,
+                #e6e1d8 20px
+            );
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 28px;
+            border: 2px solid #1f1f1f;
+            color: #1f1f1f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1f1f1f;
+            color: #f4f1ec;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .full-contact {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .contact-image {
+            width: 45%;
+            height: 320px;
+            background: repeating-linear-gradient(
+                -45deg,
+                #1f1f1f,
+                #1f1f1f 10px,
+                #3a3a3a 10px,
+                #3a3a3a 20px
+            );
+        }
+
+        form {
+            max-width: 500px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-family: "Courier New", monospace;
+            border: 1px solid #1f1f1f;
+            background-color: transparent;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #f4f1ec;
+            padding: 30px 10%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Glavni ekran -->
+<section class="hero striped">
+    <h1>SMOJE CONSULTING d.o.o.</h1>
+    <p>
+        Tehničko savjetovanje, IT podrška i popravak računala za tvrtke i privatne korisnike.
+        Pomažemo u rješavanju konkretnih tehničkih problema, optimizaciji sustava i stabilnom radu
+        vaše IT infrastrukture – bez nepotrebnih komplikacija.
+    </p>
+    <a href="#kontakt" class="btn">Kontakti</a>
+</section>
+
+<!-- 2. O nama -->
+<section>
+    <h2>Naša priča i pristup</h2>
+    <p>
+        SMOJE CONSULTING d.o.o. je mala, fokusirana konzultantska tvrtka specijalizirana za praktična IT rješenja.
+        Ne nudimo apstraktne savjete – radimo izravno s vašom opremom, softverom i korisnicima.
+        Iskustvo smo gradili na stvarnim problemima u uredima, server sobama i na terenu.
+        Razumijemo kako tehnologija mora služiti poslovanju, a ne obrnuto.
+        Svakom klijentu pristupamo individualno, s jasnim ciljem dugoročne stabilnosti sustava.
+    </p>
+</section>
+
+<!-- 3. Servisi -->
+<section class="striped">
+    <h2>Što konkretno radimo</h2>
+    <div class="grid-3">
+        <div>
+            <h3>Tehničko IT savjetovanje</h3>
+            <p>
+                Analiziramo postojeću IT infrastrukturu i pronalazimo slabe točke u radu sustava.
+                Savjetujemo pri odabiru opreme, softvera i mrežnih rješenja.
+                Fokus je na pouzdanosti, sigurnosti i realnim potrebama poslovanja.
+            </p>
+        </div>
+        <div>
+            <h3>IT podrška i održavanje</h3>
+            <p>
+                Pružamo redovitu i ad-hoc IT podršku za radna mjesta i servere.
+                Rješavamo probleme s mrežom, e-mailom, sigurnosnim kopijama i operativnim sustavima.
+                Cilj je minimalni prekid rada i brza reakcija.
+            </p>
+        </div>
+        <div>
+            <h3>Popravak računala i dijagnostika</h3>
+            <p>
+                Dijagnosticiramo hardverske i softverske kvarove na računalima i laptopima.
+                Zamjenjujemo neispravne komponente i optimiziramo performanse.
+                Spašavanje podataka i priprema sustava za daljnji rad dio su standardne usluge.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Prednosti -->
+<section>
+    <h2>Zašto klijenti ostaju s nama</h2>
+    <div class="grid-3">
+        <div>
+            <h3>Praktično iskustvo</h3>
+            <p>
+                Radimo s realnim sustavima, ne teorijskim modelima.
+                Znamo što funkcionira u svakodnevnom radu.
+            </p>
+        </div>
+        <div>
+            <h3>Jasna komunikacija</h3>
+            <p>
+                Objašnjavamo tehničke stvari razumljivim jezikom.
+                Bez nepotrebnog žargona i skrivenih troškova.
+            </p>
+        </div>
+        <div>
+            <h3>Pouzdanost</h3>
+            <p>
+                Dogovoreni rokovi i odgovornost prema sustavima klijenata.
+                Tehnologija mora biti stabilna i predvidljiva.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Proces -->
+<section class="striped">
+    <h2>Kako izgleda suradnja</h2>
+    <div class="grid-3">
+        <div>
+            <h3>1. Analiza</h3>
+            <p>
+                Upoznavanje s postojećim stanjem i identifikacija problema.
+            </p>
+        </div>
+        <div>
+            <h3>2. Rješenje</h3>
+            <p>
+                Predlažemo konkretne tehničke korake i plan implementacije.
+            </p>
+        </div>
+        <div>
+            <h3>3. Podrška</h3>
+            <p>
+                Implementacija, testiranje i daljnja IT podrška po potrebi.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Kontakti -->
+<section id="kontakt" class="full-contact">
+    <div>
+        <h2>Stupimo u kontakt</h2>
+        <p>
+            Ako imate tehnički problem ili trebate pouzdan IT savjet, slobodno nam se javite.
+            Odgovaramo brzo i konkretno, bez automatiziranih odgovora.
+            Najjednostavniji put do stabilnog IT sustava počinje jednim e-mailom.
+        </p>
+        <p>
+            <strong>E-mail:</strong> office@smojeconsulting.services<br>
+            <strong>Adresa:</strong> Krležina 26, 21000 Split
+        </p>
+    </div>
+    <div class=""></div>
+</section>
+
+<!-- 7. Kontakt forma -->
+<section>
+    <h2>Kratki upit</h2>
+    <form>
+        <input type="text" placeholder="Vaše ime">
+        <input type="email" placeholder="Vaš e-mail">
+        <textarea rows="4" placeholder="Kratki opis problema ili upita"></textarea>
+        <button class="btn" type="submit">Pošalji upit</button>
+    </form>
+</section>
+
+<!-- 8. Footer -->
+<footer>
+    <p>
+        © 2026 SMOJE CONSULTING d.o.o. — Tehničko savjetovanje i IT podrška<br>
+        Krležina 26, 21000 Split
+    </p>
+</footer>
+
+</body>
+</html>
